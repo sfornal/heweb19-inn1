@@ -32,19 +32,6 @@ The pages found in in the posts
 {%- endfor -%}
 </ul>
 
-## Links from an external data source
-
-These links were sourced from [hawksworx.com](https://www.hawksworx.com/feed.json) at build time.
-
-<ul class="listing">
-{%- for item in hawksworx.entries.slice(0,5) -%}
-  <li>
-    <a href="{{ item.link }}">{{ item.title }}</a>
-  </li>
-{%- endfor -%}
-</ul>
-
-
 ## Prerequisite
 
 - [Node and NPM](https://nodejs.org/)
