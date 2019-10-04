@@ -1,28 +1,14 @@
-# EleventyOne
+# Better, Harder, Faster, Stronger: Supercharge Your Site with Service Workers
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/056b4a67-70e6-4af4-9be5-dee151b8e906/deploy-status)](https://app.netlify.com/sites/eleventyone/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/176729ee-f411-4b78-9c33-c2fe9bb625c5/deploy-status)](https://app.netlify.com/sites/heweb19-inn1/deploys)
 
-Phil's first port of call when starting another project using Eleventy.
-
-This project scaffold includes:
-
-- [Eleventy](https://11ty.io) with a skeleton site
-- A date format filter for Nunjucks based on [Luxon](https://moment.github.io/luxon)
-- A tiny CSS pipeline with PostCSS
-- A tiny inline JS pipeline
-- JS search index generator
-- [Netlify Dev](https://www.netlify.com/products/dev) for testing [Netlify redirects](https://netlify.com/docs/redirects/)
-- Serverless (FaaS) development pipeline with [Netlify Dev](https://www.netlify.com/products/dev) and [Netlify Functions](https://www.netlify.com/products/functions)
-
-
-![Eleventy screenshot](./eleventyone-template.jpg)
-
+A simple slide deck, built on [Netlify](https://netlify.com), [Eleventy](https://www.11ty.io/), and the [EleventyOne](https://eleventyone.netlify.com/) scaffold by Phil Hawksworth.
 
 ## Instructions
 
 To get your own instance of this 11ty starter project cloned and deploying to Netlify very quickly, just click the button below and follow the instructions.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/philhawksworth/eleventyone)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sfornal/heweb19-inn1)
 
 
 ## Wait, what happens when I click that button?
@@ -43,9 +29,6 @@ Good question. Here's what it will do...
 ```bash
 # install the dependencies
 npm install
-
-# External data sources can be stashed locally
-npm run seed
 
 # It will then be available locally for building with
 npm run start

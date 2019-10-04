@@ -37,7 +37,7 @@ module.exports = function(config) {
   config.addPassthroughCopy("./src/site/images");
 
   // make the seed target act like prod
-  env = (env=="seed") ? "prod" : env;
+
   return {
     dir: {
       input: "src/site",

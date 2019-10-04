@@ -1,4 +1,4 @@
 module.exports = {
-  "rootUrl" : "https://site-root-url.com",
+  "rootUrl" : "https://heweb19-inn1.netlify.com",
   "buildTime" : new Date()
 }
