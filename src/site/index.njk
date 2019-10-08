@@ -1,0 +1,22 @@
+---
+title: >-
+    Better, Harder, Faster, Stronger
+subtitle: >-
+    Supercharging Your Site with Service Workers
+layout: layouts/base.njk
+showcontrols: true
+bgColor: blue
+---
+
+<header class="slide current title-slide background-{{bgColor}}">
+    <h1 class="main-title">{{title}}</h1>
+    <h2 class="subtitle">{{subtitle}}</h2>
+</header>
+
+{% for slide in collections.slides %}
+    {% from "slidebody.njk" import slide_body %}
+    {% call slide_body(slide.data.title, slide.data.bgColor, slide.data.slideType) %}
+        {{ slide.templateContent | safe }}
+    {%- endcall %}
+
+{% endfor %}

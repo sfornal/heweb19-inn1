@@ -1,6 +1,8 @@
 ---
 title: A post page
-date: 2018-03-21
+order: 1
+bgColor: burgundy
+slideType: image
 ---
 
 There's not much here in the sample post page. Better get to work.

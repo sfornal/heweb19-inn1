@@ -1,0 +1,10 @@
+{% macro slide_body(title, bgColor='white', type='generic', screenReaderText='') %}
+
+<section class="slide background-{{bgColor}} {{type}}">
+    {% if title %}
+    <h3 class="slide-title">{{ title }}</h3>
+    {% endif %}
+    
+    {{ caller() }}
+</section>
+{%- endmacro %}

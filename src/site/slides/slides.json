@@ -1,0 +1,7 @@
+{
+  "layout" : "layouts/slide.njk",
+  "tags" : "slides",
+  "templateEngineOverride": "njk,md",
+  "slideType": "generic",
+  "bgColor": "white"
+}

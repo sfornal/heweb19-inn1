@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+pageClass: posts
+templateEngineOverride: njk, md
+---
+
+{% from "slidebody.njk" import slide_body %}
+{% call slide_body(title, bgColor, slideType) %}
+{{ content | safe }}
+{%- endcall %}

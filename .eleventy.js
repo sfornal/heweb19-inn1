@@ -32,11 +32,8 @@ module.exports = function(config) {
       return minified.code;
   });
 
-
   // pass some assets right through
   config.addPassthroughCopy("./src/site/images");
-
-  // make the seed target act like prod
 
   return {
     dir: {
