@@ -1,88 +1,23 @@
-/* //All official colors for TCCD Web Use */
-
-/* //Primary color pallet */
-$tcc-blue: #003b76;
-$tcc-blue-lighter: #005ca8;
-$tcc-blue-darker: #0c2753;
-
-$tcc-teal: #007b97;
-$tcc-teal-lighter: #00adc9;
-$tcc-teal-darker: #005c72;
-
-$tcc-burgundy: #99002b;
-$tcc-burgundy-lighter: #cc003f;
-$tcc-burgundy-darker: #6a0316;
-
-$tcc-beige: #d0c391;
-$tcc-beige-lighter: #ffedb3;
-$tcc-beige-darker: #99926d;
-
-/* //Secondary color pallet */
-$tcc-green: #8dc63f;
-$tcc-green-lighter: #b7f752;
-$tcc-green-darker: #66952e;
-
-$tcc-orange: #f05a28;
-$tcc-orange-lighter: #ff795f;
-$tcc-orange-darker: #99926d;
-
-/* //Tertiary Color pallet */
-$tcc-yellow: #f2db00;
-$tcc-yellow-lighter: #ffe164;
-$tcc-yellow-darker: #b0a30d;
-
-$tcc-purple: #662d91;
-$tcc-purple-lighter: #843ec1;
-$tcc-purple-darker: #4c196d;
-
-$tcc-forestgreen: #006838;
-$tcc-forestgreen-lighter: #00994c;
-$tcc-forestgreen-darker: #004821;
-
-/* //Grayscales */
-$dark-gray: #292929;
-$medium-gray: #585858;
-$light-gray: #e9e9e9;
-
-$pure-white: #fff;
-$pure-black: #000;
-
-$text-black: #404040; /*//aka 90% black*/
-
-/* //Translucent shadows */
+/* // Slideshow specific stuff */
+$color: #404040;
+$bgcolor: #e9e9e9;
+$link-color: #315cbf;
+$current-slide: #ffe164;
 $shadow-light: rgba(0, 0, 0, 0.4);
 $shadow-dark: rgba(0, 0, 0, 0.8);
+$white: #fff;
 
-/* // Link color */
-$tcc-link-color: #315cbf;
-$tcc-link-color-contrast: $pure-white;
-
-/* //Table Styles Colors */
-$tcc-table-color0: #fcfcfc;
-$tcc-table-color1: #f2f2f2;
-$tcc-table-color2: lighten($tcc-teal, 60%);
-$tcc-table-color2-contrast: $text-black;
-
-/* //TCC Social Media Colors */
-$tcc-facebook-color: #3b5998;
-$tcc-twitter-color: #00aced;
-$tcc-youtube-color: #b00;
-$tcc-instagram-color: #833ab4;
-
-/* // Slideshow specific stuff */
-$color: $text-black;
-$bgcolor: $light-gray;
-$link-color: $tcc-link-color;
-$current-slide: $tcc-green-lighter;
 $font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
+/* Flexible font sizing stuff */
 $min-font-size: 18px;
 $max-font-size: 58px;
 $unitless-min-font-size: 18;
 $unitless-max-font-size: 58;
 $min-viewport: 320px;
 $max-viewport: 1200px;
-$unitless-max-viewport: 1200;
 $unitless-min-viewport: 320;
+$unitless-max-viewport: 1200;
 
+/* Presentation watermark */
 $water-mark: '#inn1';

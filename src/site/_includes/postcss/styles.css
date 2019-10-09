@@ -51,9 +51,9 @@ body {
         .button {
             -webkit-appearnce: none;
             background: transparent;
-            border: solid 1px $pure-white;
+            border: solid 1px $white;
             border-radius: 4px;
-            color: $pure-white;
+            color: $white;
             font-size: 2rem;
             margin: 0 5px;
             opacity: 0.5;
@@ -103,30 +103,20 @@ body {
         }
 
         &.background-blue {
-            background: linear-gradient(to top right, $tcc-blue-lighter, $tcc-blue-lighter, $tcc-blue, $tcc-blue-darker);
-            color: $pure-white;
-        }
-
-        &.background-teal {
-            background: linear-gradient(to top right, $tcc-teal-lighter, $tcc-teal, $tcc-teal-darker);
-            color: $pure-white;
-        }
-
-        &.background-burgundy {
-            background: linear-gradient(to top right, $tcc-burgundy-lighter, $tcc-burgundy-lighter, $tcc-burgundy, $tcc-burgundy-darker);
-            color: $pure-white;
+            background: linear-gradient(to top right, lightblue, skyblue, blue, darkblue);
+            color: $white;
         }
 
         &.background-white {
-            background: linear-gradient(to top right, $pure-white, $light-gray, $medium-gray, 30%);
-            color: $text-black;
+            background: linear-gradient(to top right, $white, #f0f0f0, #efefef, $white);
+            color: $color;
         }
 
         &:not(.title-slide),
         &:not(.slide-footer) {
             &::after {
                 bottom: 2vh;
-                color: $pure-white;
+                color: $white;
                 content: $water-mark;
                 display: block;
                 font-size: 1.75em;
@@ -191,19 +181,20 @@ body {
     .image {
         padding: 5vw;
 
-        .slide-title {
+        .slide-title,
+        h3 {
             display: none;
         }
 
         .slide-image-wrap {
             align-items: center;
             display: flex;
-            height: 100%;
+            height: 90vh;
             justify-content: center;
-            width: 100%;
+            width: 90vw;
         }
 
-        .slide-image {
+        .slide-image-wrap img {
             box-shadow: 4px 4px 6px $shadow-light;
             display: block;
             height: auto;
@@ -252,9 +243,9 @@ body {
             font-size: 2rem;
             padding: 0.2rem 0.4rem;
             background: transparent;
-            border: solid 1px $pure-black;
+            border: solid 1px black;
             border-radius: 4px;
-            color: $pure-black;
+            color: black;
         }
     }
 

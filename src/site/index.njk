@@ -5,17 +5,20 @@ subtitle: >-
     Supercharging Your Site with Service Workers
 layout: layouts/base.njk
 showcontrols: true
-bgColor: blue
+color: blue
 ---
 
-<header class="slide current title-slide background-{{bgColor}}">
+<header class="slide current title-slide background-{{color}}">
     <h1 class="main-title">{{title}}</h1>
     <h2 class="subtitle">{{subtitle}}</h2>
+    <p>Stephen Fornal</p>
+    <p>Manager of Web Development</p>
+    <p>Tarrant County College, Fort Worth, TX</p>
 </header>
 
 {% for slide in collections.slides %}
     {% from "slidebody.njk" import slide_body %}
-    {% call slide_body(slide.data.title, slide.data.bgColor, slide.data.slideType) %}
+    {% call slide_body(slide.data.title, slide.data.color, slide.data.type) %}
         {{ slide.templateContent | safe }}
     {%- endcall %}
 
