@@ -5,6 +5,6 @@ type: general
 ---
 ### Installed / Waiting
 
-* The Service Worker is ready to take over control of your web site
-* If there is a previous Service Worker, it remains in control until the user leaves your site completely
-* Once the user revisits your site, the new Service Worker moves on to **Activating**
+* The service worker is ready
+* Any previous service worker remains in control until all clients close
+* On a revisit, the new service worker moves to **Activating**

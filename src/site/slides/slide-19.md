@@ -5,8 +5,8 @@ type: general
 ---
 ### Cache First, Then Network
 
-Here's our basic strategy:
+Here's a basic strategy:
 
-1. Check the cache for the requested resource
+1. Check the cache
 2. If it's in the cache, return the cached copy
-3. If not, request the resource from the network like usual
+3. If not, request the resource from the network

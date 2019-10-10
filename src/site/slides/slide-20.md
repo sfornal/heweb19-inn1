@@ -9,7 +9,7 @@ type: code
 self.addEventListener('fetch', event => {
   const request = event.request
   event.respondWith(
-    caches.match(request) //Returns a promise for a Response
+    caches.match(request) // Promise for a Response
       .then(response => {
         if (response) { // Annoying!
           return response

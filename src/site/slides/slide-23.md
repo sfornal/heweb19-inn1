@@ -5,7 +5,7 @@ type: code
 ---
 ### Install Event
 
-We need to tell the service worker that we aren't done installing until we populate our cache.
+Tell the service worker that it's not done installing until everything is cached
 
 ```javascript
 self.addEventListener('install', event => {

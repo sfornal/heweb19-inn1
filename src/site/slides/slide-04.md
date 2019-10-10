@@ -1,12 +1,10 @@
 ---
 title: slide 04
-color: orange
+color: blue
 type: general
 ---
 ### A Bad Service Worker
 
-Be careful!
-
-A poorly written service worker will mess things up.
-
-Only deploy to production when you know it's fully tested.
+* Be careful!
+* A poorly written service worker will mess things up
+* Only deploy to production when fully tested

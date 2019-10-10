@@ -6,6 +6,5 @@ type: general
 ### Activating
 
 * The `activate` event fires
-* As long as the event succeeds, we move on
-* If the event handler fails, we move to **Redundant**
-* Typical tasks during activation include deleting old caches
+* If the event handler fails, move to **Redundant** state
+* Typical tasks include deleting old caches

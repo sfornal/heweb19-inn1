@@ -5,10 +5,10 @@ type: general
 ---
 ### Caching Strategies Revisited
 
-Let's fine tune our `fetch` event handling. Let's create a different strategy for images.
+Fine tune `fetch` event handling to create a different strategy for images.
 
 1. Check the cache
 2. If it's in the cache, return it
-   1. Also, grab a fresh copy from the network
+  * Also, grab a fresh copy from the network
 3. If it's not in the cache, get it from the network
-   1. And cache it
+  * And cache it

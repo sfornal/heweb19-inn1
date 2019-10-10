@@ -6,5 +6,5 @@ type: general
 ### Parsed
 
 * Syntactically correct Javascript
-* Served from your domain
+* Served from same origin
 * Over HTTPS

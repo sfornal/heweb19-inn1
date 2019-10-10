@@ -1,9 +1,9 @@
 ---
 title: slide 02
-color: yellow
+color: blue
 type: general
 ---
-### Some "Cool Stuff"
+### Some “Cool Stuff”
 
 * Fetch API
 * Cache API

@@ -111,22 +111,6 @@ body {
             color: $color;
         }
 
-        &.background-yellow {
-            background: linear-gradient(41deg,transparent,transparent 66%,#eee 66%,#fff),
-                linear-gradient(150deg,transparent,transparent 70%,#eee 70%,#fff),
-                linear-gradient(to top right, $yellow-start, $yellow-end);
-            background-blend-mode: multiply;
-            color: $color;
-        }
-
-        &.background-orange {
-            background: linear-gradient(41deg,transparent,transparent 66%,#eee 66%,#fff),
-                linear-gradient(150deg,transparent,transparent 70%,#eee 70%,#fff),
-                linear-gradient(to top right, $orange-start, $orange-end);
-            background-blend-mode: multiply;
-            color: $color;
-        }
-
         &.background-white {
             background: $white;
             color: $color;

@@ -5,8 +5,7 @@ type: general
 ---
 ### Ok, How Do I Make That Useful
 
-It's time to think about _caching_.
-
-The Cache API allows us to create and maintain caches of our choosing.
-
-With a service worker in charge of your site, you can elect to have resources stored in the cache, waiting. A trip to the cache is **always** faster than a network request. And, cached content is available even if the user is _offline_.
+* Cache API allows creation of custom caches
+* A service worker can store resources in the cache
+* A trip to the cache is **always** faster
+* Cached content is available_offline_

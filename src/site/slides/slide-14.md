@@ -5,6 +5,5 @@ type: general
 ---
 ### Redundant
 
-* Installation or Activation event failed
-* –Or– Service worker was replaced by a new service worker
-* If there was a previously active service worker, it will resume control
+* Installation or Activation event failed, or service worker was replaced by a new service worker
+* A previously active service worker will resume control

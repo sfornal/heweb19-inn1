@@ -7,7 +7,6 @@ type: general
 
 * Trim your caches
 * Make the offline page useful
-* Audit your site's resources
 * Navigation Preloads
 * Fallback Images
 * Lie-Fi

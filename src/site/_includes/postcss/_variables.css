@@ -7,14 +7,8 @@ $shadow-light: rgba(0, 0, 0, 0.4);
 $shadow-dark: rgba(0, 0, 0, 0.8);
 $white: #fff;
 
-$blue-start: #96e1ff;
-$blue-end: #b7bfff;
-
-$yellow-start: rgb(255, 255, 0);
-$yellow-end: rgb(255, 255, 151);
-
-$orange-start: rgb(189, 178, 80);
-$orange-end: rgb(255, 236, 149);
+$blue-start: #b7ebff;
+$blue-end: #c2c9ff;
 
 $font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
