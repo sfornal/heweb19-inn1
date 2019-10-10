@@ -1,7 +1,7 @@
 ---
 title: slide 16
 color: blue
-type: general
+type: code
 ---
 ### Fetch Handling
 

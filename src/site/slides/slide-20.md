@@ -1,7 +1,7 @@
 ---
 title: slide 20
 color: blue
-type: general
+type: code
 ---
 ### Fetch Handling Revised, Part 2
 

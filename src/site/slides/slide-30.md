@@ -1,9 +1,11 @@
 ---
 title: slide 30
 color: blue
-type: general
+type: code
 ---
 ### Fetch Handling Revised, Part 5
+
+Continued…
 
 ```javascript
             else {

@@ -1,7 +1,7 @@
 ---
 title: slide 31
 color: blue
-type: general
+type: code
 ---
 ### Abstraction
 

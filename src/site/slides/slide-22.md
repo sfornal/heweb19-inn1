@@ -1,7 +1,7 @@
 ---
 title: slide 22
 color: blue
-type: general
+type: code
 ---
 ### Setting Up
 

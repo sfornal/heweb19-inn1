@@ -1,7 +1,7 @@
 ---
 title: slide 13
 color: blue
-type: image
+type: general
 ---
 ### Active
 

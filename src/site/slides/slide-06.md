@@ -1,7 +1,7 @@
 ---
 title: slide 06
 color: blue
-type: general
+type: code
 ---
 ### Registering a Service Worker
 

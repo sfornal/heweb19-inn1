@@ -30,7 +30,15 @@ self.addEventListener('activate', event => {
 })
 
 self.addEventListener('fetch', (event) => {
+    
     const req = event.request
+    const url = new URL(req.url)
+
+    if (url.origin !== location.origin || req.method !== 'GET') {
+        event.respondWith(fetch(req))
+        return;
+    }
+
     event.respondWith(
         caches.match(req)
             .then(resp => {

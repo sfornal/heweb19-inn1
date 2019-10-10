@@ -1,7 +1,7 @@
 ---
 title: slide 24
 color: blue
-type: general
+type: code
 ---
 ### Install Event, Part 2
 

@@ -1,7 +1,7 @@
 ---
 title: slide 23
 color: blue
-type: general
+type: code
 ---
 ### Install Event
 

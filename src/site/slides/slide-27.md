@@ -1,7 +1,7 @@
 ---
 title: slide 27
 color: blue
-type: general
+type: code
 ---
 ### Activate Event
 

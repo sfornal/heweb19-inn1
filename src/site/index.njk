@@ -1,6 +1,6 @@
 ---
 title: >-
-    Better, Harder, Faster, Stronger
+    Harder, Better, Faster, Stronger
 subtitle: >-
     Supercharging Your Site with Service Workers
 layout: layouts/base.njk
@@ -11,9 +11,9 @@ color: blue
 <header class="slide current title-slide background-{{color}}">
     <h1 class="main-title">{{title}}</h1>
     <h2 class="subtitle">{{subtitle}}</h2>
-    <p>Stephen Fornal</p>
-    <p>Manager of Web Development</p>
-    <p>Tarrant County College, Fort Worth, TX</p>
+    <p class="author-link"><a href="mailto:stephen.fornal@tccd.edu">Stephen Fornal</a><br/>
+    <small>Manager of Web Development<br/>
+    Tarrant County College, Fort Worth, TX</small></p>
 </header>
 
 {% for slide in collections.slides %}
