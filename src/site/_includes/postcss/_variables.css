@@ -1,8 +1,8 @@
 /* // Slideshow specific stuff */
-$color: #404040;
-$bgcolor: #e9e9e9;
+$color: #303030;
+$bgcolor: #f0f3f5;
 $link-color: #315cbf;
-$current-slide: #ffe164;
+$current-slide: #ffeda7;
 $shadow-light: rgba(0, 0, 0, 0.4);
 $shadow-dark: rgba(0, 0, 0, 0.8);
 $white: #fff;

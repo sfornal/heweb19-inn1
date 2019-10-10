@@ -59,3 +59,9 @@
     nextButton.onclick = next;
 
 })(document);
+
+if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('/sw.js')
+    .then(function(registration) { console.log('Service worker registered: ', registration) })
+    .catch(function(err) { console.error('Service worker not registered: ', err) });
+}

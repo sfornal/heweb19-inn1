@@ -3,6 +3,8 @@ title: slide 04
 color: white
 type: image
 ---
-### Another Analogy to Keep in Mind
+### A Bad Service Worker
 
-![A Librarian Can be Terrible, too. Like Tammy.](/images/tammy.png "A picture of Tammy from Parks and Rec")
+Be careful!
+
+A poorly written service worker could actually give a pretty bad user experience. Definitely work in a dev environment when making changes to your service worker, and only deploy to production when you know it's fully tested.

@@ -1,12 +1,10 @@
 ---
 title: slide 03
-color: blue
-type: general
+color: white
+type: image
 ---
-### Some "Cool Stuff"
+### A Good Analogy
 
-* Fetch API
-* Cache API
-* Push Notifications API
-
-This is powerful! And dangerous…
+<div class="slide-image-wrap">
+<img src='images/librarian_dog.jpg' alt="Photo by MaggieLovesOrbit On Insta on Unsplash"/>
+</div>
