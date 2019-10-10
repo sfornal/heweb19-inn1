@@ -8,16 +8,16 @@ type: code
 Continued…
 
 ```javascript
-            else {
-                return fetch(request)
-                .then(responseFromFetch => {
-                    fetchEvent.waitUntil(
-                        stash(IMAGE_CACHE, request, responseFromFetch.clone())
-                    )
-                    return responseFromFetch
-                })
-            }
-        })
-    )
+      else {
+        return fetch(request)
+          .then(responseFromFetch => {
+            fetchEvent.waitUntil(
+              stash(IMAGE_CACHE, request, responseFromFetch.clone())
+            )
+            return responseFromFetch
+          })
+      }
+    })
+  )
 }
 ```

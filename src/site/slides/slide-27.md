@@ -7,18 +7,18 @@ type: code
 
 ```javascript
 self.addEventListener('activate', event => {
-    event.waitUntil(
-        caches.keys() // Returns a Promise
-            .then(cacheNames => {
-                return Promise.all(
-                    cacheNames.map(name => {
-                        if ( !CACHE_LIST.includes(name)) {
-                            return caches.delete(name) // A Promise
-                        }
-                    }) //end of map()
-                ) //end of Promise.all
-            }) // End of keys Promise
-            .then(() => clients.claim()) // This is cool!
-    ) //end of waitUntil
+  event.waitUntil(
+    caches.keys() // Returns a Promise
+      .then(cacheNames => {
+        return Promise.all(
+          cacheNames.map(name => {
+            if ( !CACHE_LIST.includes(name)) {
+              return caches.delete(name) // A Promise
+            }
+          }) //end of map()
+        ) //end of Promise.all
+      }) // End of keys Promise
+      .then(() => clients.claim()) // This is cool!
+  ) //end of waitUntil
 })
 ```

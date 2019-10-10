@@ -6,9 +6,14 @@ type: code
 ### Registering a Service Worker
 
 ```javascript
-if (navigator.serviceWorker) { /* Feature check */
-    navigator.serviceWorker.register('/sw.js')
-        .then(function(registration) { /* It worked */})
-        .catch(function(error) { /* It didn't */ });
+/* Feature check */
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register('/sw.js')
+    .then(function(registration) {
+      /* It worked */
+    })
+    .catch(function(error) {
+      /* It didn't */
+    });
 }
 ```

@@ -9,7 +9,7 @@ If the _user agent_ supports service workers, it also supports ES2015 syntax, so
 
 ```javascript
 self.addEventListener('fetch', event => {
-    const request = event.request
-    event.respondWith( fetch(request) )
+  const request = event.request
+  event.respondWith( fetch(request) )
 })
 ```

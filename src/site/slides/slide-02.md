@@ -1,6 +1,6 @@
 ---
 title: slide 02
-color: blue
+color: yellow
 type: general
 ---
 ### Some "Cool Stuff"

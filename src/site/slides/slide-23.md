@@ -9,6 +9,6 @@ We need to tell the service worker that we aren't done installing until we popul
 
 ```javascript
 self.addEventListener('install', event => {
-    event.waitUntil( /* A Promise is fulfilled */ )
+  event.waitUntil( /* A Promise is fulfilled */ )
 })
 ```

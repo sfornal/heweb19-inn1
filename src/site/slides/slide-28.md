@@ -9,6 +9,6 @@ Let's fine tune our `fetch` event handling. Let's create a different strategy fo
 
 1. Check the cache
 2. If it's in the cache, return it
-   a. Also, grab a fresh copy from the network
+   1. Also, grab a fresh copy from the network
 3. If it's not in the cache, get it from the network
-   a. And cache it
+   1. And cache it

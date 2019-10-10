@@ -104,8 +104,27 @@ body {
         }
 
         &.background-blue {
-            background: linear-gradient(to top right, lightblue, skyblue, blue, darkblue);
-            color: $white;
+            background: linear-gradient(41deg,transparent,transparent 66%,#eee 66%,#fff),
+                linear-gradient(150deg,transparent,transparent 70%,#eee 70%,#fff),
+                linear-gradient(to top right, $blue-start, $blue-end);
+            background-blend-mode: multiply;
+            color: $color;
+        }
+
+        &.background-yellow {
+            background: linear-gradient(41deg,transparent,transparent 66%,#eee 66%,#fff),
+                linear-gradient(150deg,transparent,transparent 70%,#eee 70%,#fff),
+                linear-gradient(to top right, $yellow-start, $yellow-end);
+            background-blend-mode: multiply;
+            color: $color;
+        }
+
+        &.background-orange {
+            background: linear-gradient(41deg,transparent,transparent 66%,#eee 66%,#fff),
+                linear-gradient(150deg,transparent,transparent 70%,#eee 70%,#fff),
+                linear-gradient(to top right, $orange-start, $orange-end);
+            background-blend-mode: multiply;
+            color: $color;
         }
 
         &.background-white {
@@ -133,7 +152,7 @@ body {
         line-height: 1.1;
         margin-bottom: 0.5em;
         text-align: center;
-        text-shadow: 2px 2px $shadow-dark;
+        /* text-shadow: 2px 2px $shadow-dark; */
     }
 
     .subtitle {
@@ -147,7 +166,7 @@ body {
         line-height: 1;
         margin: 1em 0;
         position: relative;
-        text-shadow: 2px 2px $shadow-dark;
+        /* text-shadow: 2px 2px $shadow-dark; */
     }
 
     .image {
@@ -175,7 +194,7 @@ body {
 
     .code {
         padding: 5vmin;
-        
+
         h3 {
             display: none;
         }
