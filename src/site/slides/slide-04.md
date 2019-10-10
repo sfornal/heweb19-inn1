@@ -1,7 +1,7 @@
 ---
 title: slide 04
-color: white
-type: image
+color: blue
+type: general
 ---
 ### A Bad Service Worker
 
