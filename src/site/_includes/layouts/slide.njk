@@ -1,10 +1,12 @@
 ---
 layout: layouts/base.njk
-pageClass: slides
+bodyClass: slideshow
 templateEngineOverride: njk, md
 ---
 
+<main class="slides-wrapper">
 {% from "slidebody.njk" import slide_body %}
-{% call slide_body(title, color, type) %}
+{% call slide_body(title, color, type, 'current') %}
 {{ content | safe }}
 {%- endcall %}
+</main>

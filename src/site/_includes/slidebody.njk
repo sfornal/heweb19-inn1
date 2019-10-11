@@ -1,6 +1,6 @@
-{% macro slide_body(title, color='white', type='general') %}
+{% macro slide_body(title, color='white', type='general', current='') %}
 
-<section class="slide background-{{color}} {{type}}">
+<section class="slide background-{{color}} {{type}} {{current}}">
     {{ caller() }}
 </section>
 {%- endmacro %}
