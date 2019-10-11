@@ -32,6 +32,20 @@ module.exports = function(config) {
       return minified.code;
   });
 
+  // Custom sorted collection
+  config.addCollection('sortedSlides', function(collection) {
+    const slides = collection.getFilteredByTag('slides');
+    return slides.sort(function(a, b) {
+        if (a.fileSlug < b.fileSlug) {
+            return -1;
+        }
+        if (a.fileSlug > b.fileSlug) {
+            return 1;
+        }
+        return 0;
+    });
+  });
+
   // pass some assets right through
   config.addPassthroughCopy("./src/site/images");
   config.addPassthroughCopy("./src/site/sw.js");

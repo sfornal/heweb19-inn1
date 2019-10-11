@@ -5,7 +5,9 @@ type: code
 ---
 ### Fetch Handling Revised
 
-If the _user agent_ supports service workers, it also supports ES2015 syntax, so we may as well write it that way. It's fun!
+If the _user agent_ supports service workers, it also supports ES2015 syntax.
+
+Safe to use arrow functions, `const` and `let`, etc.
 
 ```javascript
 self.addEventListener('fetch', event => {

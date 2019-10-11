@@ -17,10 +17,10 @@ $min-font-size: 18px;
 $max-font-size: 58px;
 $unitless-min-font-size: 18;
 $unitless-max-font-size: 58;
-$min-viewport: 320px;
-$max-viewport: 1200px;
-$unitless-min-viewport: 320;
-$unitless-max-viewport: 1200;
+$min-viewport: 400px;
+$max-viewport: 1800px;
+$unitless-min-viewport: 400;
+$unitless-max-viewport: 1800;
 
 /* Presentation watermark */
 $water-mark: '#inn1';

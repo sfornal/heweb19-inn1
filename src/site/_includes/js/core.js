@@ -36,6 +36,16 @@
         }
     };
 
+    var toggleCurrentByClick = function() {
+        if (d.body.classList.contains('no-slideshow')) {
+            d.querySelector('.slide.current').classList.remove('current');
+            this.classList.add('current');
+        }
+        else {
+            next();
+        }
+    };
+
     d.addEventListener('keydown', function(evt) {
         var LEFT_ARROW = 37,
             RIGHT_ARROW = 39,
@@ -57,6 +67,10 @@
     toggleButton.onclick = toggleShow;
     previousButton.onclick = prev;
     nextButton.onclick = next;
+
+    d.querySelectorAll('.slide').forEach(function(el) {
+        el.onclick = toggleCurrentByClick;
+    });
 
 })(document);
 

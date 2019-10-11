@@ -30,7 +30,7 @@ self.addEventListener('activate', event => {
 })
 
 self.addEventListener('fetch', (event) => {
-    
+
     const req = event.request
     const url = new URL(req.url)
 
@@ -41,33 +41,32 @@ self.addEventListener('fetch', (event) => {
 
     event.respondWith(
         caches.match(req)
-            .then(resp => {
-                if (resp) {
-                    event.waitUntil(
-                        fetch(req)
-                            .then(resp => {
-                                caches.open(CACHE)
-                                    .then(cache => {
-                                        return cache.put(req, resp)
-                                    })
-                            })
-                    )
-                    return resp
-                }
-                else {
-                    return fetch(req)
-                        .then(resp => {
-                            const copy = resp.clone()
-                            event.waitUntil(
-                                caches.open(CACHE)
-                                    .then(cache => {
-                                        return cache.put(req, copy)
-                                    })
-                            )
-                            return resp
+        .then(resp => {
+            if (resp) {
+                event.waitUntil(
+                    fetch(req)
+                    .then(resp => {
+                        caches.open(CACHE)
+                        .then(cache => {
+                            return cache.put(req, resp)
                         })
-                        .catch(() => caches.match('/index.html'))
-                }
-            })
+                    })
+                )
+                return resp
+            } else {
+                return fetch(req)
+                    .then(resp => {
+                        const copy = resp.clone()
+                        event.waitUntil(
+                            caches.open(CACHE)
+                            .then(cache => {
+                                return cache.put(req, copy)
+                            })
+                        )
+                        return resp
+                    })
+                    .catch(() => caches.match('/index.html'))
+            }
+        })
     )
 })

@@ -16,7 +16,7 @@ color: blue
     Tarrant County College, Fort Worth, TX</small></p>
 </header>
 
-{% for slide in collections.slides %}
+{% for slide in collections.sortedSlides %}
     {% from "slidebody.njk" import slide_body %}
     {% call slide_body(slide.data.title, slide.data.color, slide.data.type) %}
         {{ slide.templateContent | safe }}

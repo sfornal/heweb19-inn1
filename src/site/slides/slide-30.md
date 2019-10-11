@@ -10,11 +10,11 @@ Continued…
 ```javascript
       else {
         return fetch(request)
-          .then(responseFromFetch => {
+          .then(fResp => {
             fetchEvent.waitUntil(
-              stash(IMAGE_CACHE, request, responseFromFetch.clone())
+              stash(IMG_CACHE, request, fResp.clone())
             )
-            return responseFromFetch
+            return fResp
           })
       }
     })

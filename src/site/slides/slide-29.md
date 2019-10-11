@@ -16,7 +16,7 @@ if (request.headers.get('Accept').includes('image')) {
             fetch(request) // Grab a fresh copy
               .then(fResponse => {
                 return
-                  stash(IMAGE_CACHE, request, fResponse)
+                  stash(IMG_CACHE, request, fResponse)
               })
           )
           return response
