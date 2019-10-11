@@ -12,7 +12,7 @@ if (request.headers.get('Accept').includes('text/html')) {
     fetch(request)
       .then(resp => { // Got it, so cache it
         event.waitUntil(stash(PAGE_CACHE, request, resp.clone()))
-        return response
+        return resp
       })
       .catch(() => { // Network failed, fall back to cache
         caches.match(request)
